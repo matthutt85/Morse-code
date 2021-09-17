@@ -1,3 +1,5 @@
+import { alphabet } from "../data/data";
+
 import { translator } from "./translator";
 
 // When you type the letter a IT SHOULD display the letter a
@@ -41,6 +43,20 @@ describe("Testing for translator()", () => {
         expect(result).toBe("--.---/......---");
 
     });
+
+    // if numbers are entered in
+
+    it ("should return '.----' if the number '1' has been entered", () => {
+        let result;
+        result = translator(1);
+        expect(result).toBe(".----")
+    })
+
+    it ("should return '.----..---...--' if the number 123 has been entered", () => {
+        let result;
+        result = translator(123);
+        expect(result).toBe(".----..---...--")
+    })
 
 
     // INVALID TESTS -----------------
