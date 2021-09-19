@@ -17,9 +17,16 @@
         margin: 10px;
         background-color: #545E75;
         color: #F2D0A4;
+        overflow: scroll;
+        border-radius: 10px;
     }
 
     &__morse {
-        
+        padding: 10px;
+        margin: 10px;
+        background-color: #F2D0A4;
+        color: #545E75;
+        overflow: scroll;
+        border-radius: 10px;
     }
 }
