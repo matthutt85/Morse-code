@@ -1,0 +1,25 @@
+@use "../base/base.scss";
+
+.translator {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+
+    &__info > h2 {
+        background-color: #545E75;
+        color: #F7F7FF;
+    }
+
+    
+    &__english {
+        padding: 10px;
+        margin: 10px;
+        background-color: #545E75;
+        color: #F2D0A4;
+    }
+
+    &__morse {
+        
+    }
+}

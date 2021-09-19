@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7FF;
+  font-family: "Playfair Display", serif;
+}
+
+.translator {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+.translator__info > h2 {
+  background-color: #545E75;
+  color: #F7F7FF;
+}
+.translator__english {
+  padding: 10px;
+  margin: 10px;
+  background-color: #545E75;
+  color: #F2D0A4;
+}
