@@ -6,9 +6,13 @@
     display: grid;
     grid-template-columns: 1fr, 1fr;
 
+
     &__info > h2 {
         background-color: #545E75;
         color: #F7F7FF;
+        height: 200px;
+        font-size: 50px;
+        overflow: hidden;
     }
 
     
