@@ -1,11 +1,10 @@
-import { alphabet } from "../data/data"
-
-alphabet.array.forEach(element => {
-    
-});
+import { letters, morse } from "../data/data.js"
 
 
 
-export const translator = () => {
+const inputValue = document.getElementById("translator__input");
+const outputValue = document.getElementById("translator__output");
 
-}
+
+
+

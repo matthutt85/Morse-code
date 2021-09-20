@@ -1,6 +1,5 @@
-import { alphabet } from "../data/data";
+import { lettersToMorse } from "../js/translator.js"
 
-import { translator } from "./translator";
 
 // When you type the letter a IT SHOULD display the letter a
 
@@ -11,14 +10,14 @@ const { expect, it } = require("@jest/globals");
 //it should convert the letter into morse code when clicked
 
 
-describe("Testing for translator()", () => {
+describe("Testing for lettersToMorse()", () => {
 
     //VAILD TESTS
 
     // converting a to morse code equivalent
     it ("should convert 'a' to '.-'", () => {
         let result;
-        result = translator("a");
+        result = lettersToMorse("a");
         expect(result).toBe(".-");
 
     });
@@ -26,20 +25,20 @@ describe("Testing for translator()", () => {
 
     it("should convert 'b' to '-...'", () => {
         let result;
-        result = translator("b");
+        result = lettersToMorse("b");
         expect(result).toBe("-...");
 
     });
 
     it("should convert 'matt' to '--.---'", () => {
         let result;
-        result = translator("matt");
+        result = lettersToMorse("matt");
         expect(result).toBe("--.---")
     });
 
     it ("should convert 'matt hutt' to '--.---/......---'", () => {
         let result;
-        result = translator("matt hutt");
+        result = lettersToMorse("matt hutt");
         expect(result).toBe("--.---/......---");
 
     });
@@ -48,13 +47,13 @@ describe("Testing for translator()", () => {
 
     it ("should return '.----' if the number '1' has been entered", () => {
         let result;
-        result = translator(1);
+        result = lettersToMorse(1);
         expect(result).toBe(".----")
     })
 
     it ("should return '.----..---...--' if the number 123 has been entered", () => {
         let result;
-        result = translator(123);
+        result = lettersToMorse(123);
         expect(result).toBe(".----..---...--")
     })
 
@@ -63,7 +62,7 @@ describe("Testing for translator()", () => {
 
     it ("should return 'invalid character' if '#' character is logged", () => {
         let result;
-        result = translator("#")
+        result = lettersToMorse("#")
         expect(result).toBe("invalid character");
     });
 });
