@@ -1,38 +1,29 @@
 @use "../base/base.scss";
 
 .translator {
-    height: 100vh;
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
 
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: inline-grid;
+    }
 
     &__info > h2 {
-        background-color: #545E75;
-        color: #F7F7FF;
-        height: 200px;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2B303A;
         font-size: 50px;
-        overflow: hidden;
+        color: whitesmoke;
     }
 
-    
-    &__english {
-        height: 20vh;
-        padding: 10px;
-        margin: 10px;
-        background-color: #545E75;
-        color: #F2D0A4;
-        overflow: scroll;
-        border-radius: 10px;
-    }
-
-    &__morse {
-        height: 20vh;
-        padding: 10px;
-        margin: 10px;
-        background-color: #F2D0A4;
-        color: #545E75;
-        overflow: scroll;
-        border-radius: 10px;
+    &__info > p {
+        font-size: 30px;
     }
 }

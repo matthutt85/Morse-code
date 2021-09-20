@@ -11,33 +11,26 @@ body {
 }
 
 .translator {
-  height: 100vh;
-  width: 100%;
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+.translator__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-grid;
 }
 .translator__info > h2 {
-  background-color: #545E75;
-  color: #F7F7FF;
-  height: 200px;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2B303A;
   font-size: 50px;
-  overflow: hidden;
+  color: whitesmoke;
 }
-.translator__english {
-  height: 20vh;
-  padding: 10px;
-  margin: 10px;
-  background-color: #545E75;
-  color: #F2D0A4;
-  overflow: scroll;
-  border-radius: 10px;
-}
-.translator__morse {
-  height: 20vh;
-  padding: 10px;
-  margin: 10px;
-  background-color: #F2D0A4;
-  color: #545E75;
-  overflow: scroll;
-  border-radius: 10px;
+.translator__info > p {
+  font-size: 30px;
 }
