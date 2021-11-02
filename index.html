@@ -10,22 +10,29 @@
 <body>
     <section class="translator">
         <div class="translator__info">
-            <h2>Welcome to the<span style="color: #F2D0A4;"> /Morse code Translator</span>...</h2>
-                <p>An easy to use morse code translator that converts english into morse code. Simply input your letters, words or phrase into the text box and watch the magic happen.</p>
+            <h2 class="translator__info--header">/<span style="color: #F2D0A4;"> Morse code Translator</span>...</h2>
+                <p class="translator__info--text">An easy to use morse code translator that converts english into morse code. Simply input your letters, words or phrase into the text box and watch the MAGIC happen.</p>
         </div>
         
-        <form>
-        <div class="translator__english">
-            <input type="text" id="translator__input" required>
-        </div>
         
-            <button class="translator__convert">Convert</button>
+        <div class="translator__container">
+            <div class="translator__container--input">
+            <textarea class="translator__container--text" cols="30" rows="5"></textarea>
+            </div>
+        </div>
+
+        <div class="button">
+            <button class="button__convert">Convert</button>
+            <button class="button__reset">Reset</button>
+        </div>
 
         <div class="translator__morse">
-            <input type="text" id="translator__output" required>
+            <div class="translator__container--output">
+            <textarea class="translator__container--textOutput" cols="30" rows="5"></textarea>
+            </div>
         </div>
-        </form>
+        
     </section>
-    <script src="./js/practice.js"></script>
+    <script type="module" src="./js/dom.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+@use "../base/base.scss";
+
+
+@media (min-device-width: 360px) {
+    .button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5px;
+    
+        &__convert {
+            
+            height: 40px;
+            width: 80px;
+            margin: 5px;
+            background-color: #F2D0A4;
+            border: none;
+            font-size: 15px;
+            border-radius: 15px;
+            color: #2B303A;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px black;
+        
+        }
+    
+        &__reset {
+            
+            height: 40px;
+            width: 80px;
+            margin: 5px;
+            background-color: #58A4B0;
+            border: none;
+            font-size: 15px;
+            border-radius: 15px;
+            color: whitesmoke;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px black;
+        }
+    }
+}
+
+
+
+@media screen {
+    
+}
+
+
+@media screen {
+    
+}

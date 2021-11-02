@@ -1,29 +1,117 @@
 @use "../base/base.scss";
 
-.translator {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 100vh;
+//320px — 480px: Mobile devices.
+//481px — 768px: iPads, Tablets.
+//769px — 1024px: Small screens, laptops.
+//1025px — 1200px: Desktops, large screens.
+//1201px and more — Extra large screens, TV.
 
-    &__info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: inline-grid;
-    }
 
-    &__info > h2 {
-        height: 10vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #2B303A;
-        font-size: 50px;
-        color: whitesmoke;
-    }
+@media (min-device-width: 360px) {
 
-    &__info > p {
-        font-size: 30px;
+
+    .translator {
+        
+        height: 100vh;
+    
+        &__info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: inline-block;
+
+
+            &--header {
+                height: 100px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #2B303A;
+                font-size: 25px;
+                color: whitesmoke;
+            }
+
+
+            &--text {
+                margin: 10px;
+                font-size: 15px;
+            }
+
+        }
+
+        &__morse {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            
+            
+            &--input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                width: 350px;
+                background-color: #2b303ad0;
+                margin: 10px;
+                border-radius: 15px;
+               
+                
+            }
+
+            &--output {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                width: 320px;
+                background-color: #2b303ad0;
+                margin: 10px;
+                border-radius: 15px;
+
+            }
+
+            &--text {
+
+                height: 175px;
+                width: 300px;
+                font-size: 20px;
+                color: whitesmoke;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: #2b303a00;
+
+            }
+
+            &--textOutput {
+                height: 175px;
+                width: 300px;
+                font-size: 20px;
+                color: whitesmoke;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: #2b303a00;
+            }
+        }
     }
+    
 }
+
+
+
+
+
+
+
+
+
