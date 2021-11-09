@@ -2,7 +2,7 @@
 const lettersToMorse = (input, letters, morse) => {
     let indexMatch = [];               // empty array
     const inputArray = input.split("") // split input string into an array so we can loop through each letter
-    console.log(inputArray)
+    
     for (let i = 0; i < inputArray.length; i++) {  // looping through the new inputArray
         for (let j = 0; j < letters.length; j++) {  // looping through the variable letters array
             const element = letters[j];           // adding a new variable where the element is = to the letters index

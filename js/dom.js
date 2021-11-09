@@ -13,5 +13,6 @@ convert.addEventListener('click', () => {
 });
 
 reset.addEventListener('click', () => {
-    inputValue.innerText = ""
+    inputValue.value = " "
+    outputValue.value = " "
 });
